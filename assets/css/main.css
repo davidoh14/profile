@@ -2301,13 +2301,29 @@ input, select, textarea {
 		}
 
 	ul.default {
-		list-style: disc;
-		padding-left: 1em;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		/* padding-left: 1em; */
 	}
 
-		ul.default li {
-			padding-left: 0.5em;
-		}
+	ul.default row {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		/* flex-wrap: wrap; */
+	}
+	
+	ul.default li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100px;
+		width: 100px;
+		margin-left: 100px;
+		margin-right: 100px;
+		/* padding-left: 1em; */
+	}
 
 /* Actions */
 
@@ -3299,4 +3315,16 @@ input, select, textarea {
 					display: none;
 				}
 
+	}
+
+	#headshot {
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		height: 280px;
+		border-radius: 50%;
+	}
+
+	#sub {
+		text-transform: none;
 	}
