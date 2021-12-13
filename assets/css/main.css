@@ -2690,8 +2690,11 @@ input, select, textarea {
 			}
 
 				.feature.left .image img {
-					right: 0;
-					top: 0;
+					/* right: 0;
+					top: 0; */
+					/* width: 100%; */
+					width: 100%;
+					object-fit: cover;
 				}
 
 			.feature.left .content {
@@ -2707,8 +2710,10 @@ input, select, textarea {
 			}
 
 				.feature.right .image img {
-					left: 0;
-					top: 0;
+					/* left: 0;
+					top: 0; */
+					width: 100%;
+					object-fit: cover;
 				}
 
 			.feature.right .content {
